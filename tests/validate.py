@@ -40,23 +40,45 @@ with sync_playwright() as p:
     page.screenshot(path=str(OUT / '01-welcome.png'))
     check('Welcome announces five minutes', 'Unos 5 minutos' in page.locator('#welcome').inner_text() and page.locator('#timer').inner_text() == '5:00')
     page.locator('#startBtn').click()
-    check('Game has three phases and begins with ten equal cities', page.locator('.steps li').count() == 3 and all(c['pop'] == 1 for c in page.evaluate('CityGame.snapshot().model.cities')))
+    check('Game begins with a declared unequal Chilean hierarchy led by Gran Santiago', page.locator('.steps li').count() == 3 and page.evaluate('CityGame.snapshot().model.cities[0].pop') == 3000 and page.evaluate('CityGame.snapshot().model.population') == 6000 and 'ilustrativos' in page.locator('#coachText').inner_text())
     check('Main instructions use one in five, without a parameter choice', 'Uno de cada cinco' in page.locator('#coachText').inner_text() and 'π' not in page.locator('body').inner_text())
     check('Simon is shown without territorial force overlays', not page.locator('#forceControls').is_visible() and page.evaluate('forceHits.length') == 0)
-    check('Graph and comparison controls are disclosed later', not page.locator('#graphBtn').is_visible() and not page.locator('#comparisonTabs').is_visible())
-    check('Instructions identify the arrivals as groups of people', 'grupos de personas' in page.locator('#welcome').inner_text() and 'personas' in page.locator('#coachTitle').inner_text())
-    check('The city selector starts with the proposed itinerary', page.locator('#citySelect option').all_text_contents()[0].startswith('Rancagua') and page.locator('#citySelect option').all_text_contents()[-1].startswith('Concepción / Talcahuano'))
+    check('Initial bars make metropolitan primacy visible without opening comparison controls', page.locator('#sizeBars').is_visible() and not page.locator('#comparisonTabs').is_visible() and 'Gran Santiago' in page.locator('#bars .bar-row').first.inner_text())
+    check('Instructions identify the arrivals as groups of people', 'grupos de personas' in page.locator('#welcome').inner_text() and 'personas' in page.locator('#coachText').inner_text())
+    check('The model distinguishes Gran Santiago from secondary centers including Rengo', page.locator('#citySelect option').all_text_contents()[0].startswith('Gran Santiago') and any(x.startswith('Rengo') for x in page.locator('#citySelect option').all_text_contents()))
     geography = page.evaluate('''() => {
       const sites=Array.from({length:1000},(_,i)=>isoPosition(i));
       return {named:chileCities.map(c=>c[0]),dry:sites.every(p=>safeSite(...p)),unique:new Set(sites.map(p=>p.join(','))).size,
         fields:sites.every(p=>!inRuralField(...p)),water:waterShapes.every(poly=>{const p=poly.reduce((a,b)=>[a[0]+b[0]/poly.length,a[1]+b[1]/poly.length],[0,0]);return !isDryLand(...p);}),
         outlines:landOutlines.length,rural:ruralZones.length};
     }''')
-    check('All requested geographical names are present, including islands and the far south', len(geography['named']) == 32 and all(n in geography['named'] for n in ['Pucón','Ancud','Castro','Puerto Aysén','Puerto Williams']))
+    check('All sixteen regional capitals have map labels', page.evaluate('regionalCapitals.length') == 16 and page.evaluate('regionalCapitals.map(c=>c[0])') == ['Arica','Iquique','Antofagasta','Copiapó','La Serena','Valparaíso','Santiago','Rancagua','Talca','Chillán','Concepción','Temuco','Valdivia','Puerto Montt','Coyhaique','Punta Arenas'])
     check('A thousand city sites are on dry land with no duplicate positions', geography['dry'] and geography['unique'] == 1000)
     check('City foundations avoid rivers, lakes and rural fields', geography['water'] and geography['fields'])
     check('Chile includes islands and five visible rural resource areas', geography['outlines'] > 4 and geography['rural'] == 5)
+    capital_labels=page.evaluate('capitalLabelHits.map(p=>p.name)')
+    check('Overview renders exactly the sixteen capital labels and no Rengo label', len(capital_labels) == 16 and set(capital_labels) == set(page.evaluate('regionalCapitals.map(c=>c[0])')) and 'Rengo' not in capital_labels)
+    check('The initial hierarchy fits the projection viewport', page.locator('footer').bounding_box()['y'] + page.locator('footer').bounding_box()['height'] <= 768)
+    hierarchy_checks=page.evaluate('''() => {
+      const initial=chileInitial(),maxOther=Math.max(...initial.cities.slice(1).map(c=>c.pop));
+      let largestAlways=true;
+      for(let seed=1;seed<=100;seed++){for(const weight of [.5,1,2]){let m=Model.advance(Model.clone(initial),8000,.2,Model.rng(seed),seed%24,weight);if(Model.sorted(m)[0].id!==0)largestAlways=false;}}
+      const sites=Array.from({length:400},(_,i)=>i+24),santiago=sites.filter(i=>siteClusters[i]===0).length;
+      const near=sites.filter(i=>{const p=isoPosition(i),hub=isoPosition(siteClusters[i]);return Math.hypot((p[0]-hub[0])/.65,p[1]-hub[1])<=4.7;}).length;
+      return{largestAlways,bound:initial.cities[0].pop>maxOther+2000,santiago:santiago/400,near:near/400};
+    }''')
+    check('Gran Santiago remains largest across 100 seeds and all scenario weights', hierarchy_checks['largestAlways'] and hierarchy_checks['bound'])
+    check('New nuclei concentrate near major hubs, with about half around Gran Santiago', .45 <= hierarchy_checks['santiago'] <= .55 and hierarchy_checks['near'] >= .95)
     page.screenshot(path=str(OUT / '16-chile-overview.png'))
+    page.locator('#citySelect').select_option('16')
+    page.locator('#mapZoomBtn').click()
+    drawn_text=page.evaluate('''() => {const ctx=document.querySelector('#map').getContext('2d'),original=ctx.fillText,text=[];ctx.fillText=function(value,...args){text.push(String(value));return original.call(this,value,...args);};try{CityGame.advanceSeconds(0);}finally{ctx.fillText=original;}return text;}''')
+    check('Selecting Rengo at detail zoom does not reintroduce its map label', not any('Rengo' in t for t in drawn_text) and all(n in [c for c in ['Arica','Iquique','Antofagasta','Copiapó','La Serena','Valparaíso','Santiago','Rancagua','Talca','Chillán','Concepción','Temuco','Valdivia','Puerto Montt','Coyhaique','Punta Arenas']] for n in page.evaluate('capitalLabelHits.map(p=>p.name)')))
+    page.locator('#mapReset').click()
+    page.locator('#citySelect').select_option('0')
+    page.locator('#projectorBtn').click()
+    check('The initial hierarchy also fits with projection mode enabled', page.locator('footer').bounding_box()['y'] + page.locator('footer').bounding_box()['height'] <= 768)
+    page.locator('#projectorBtn').click()
     navigation_model=page.evaluate('CityGame.snapshot().model')
     navigation_selected=page.evaluate('CityGame.getState().selected')
     rect=page.locator('#map').bounding_box()
@@ -109,7 +131,7 @@ with sync_playwright() as p:
     page.locator('#historyClose').click()
     page.clock.fast_forward(75000)
     page.clock.run_for(20)
-    check('Growth reaches 1000 groups before the first decision', page.evaluate('CityGame.snapshot().model.population') == 1000 and page.evaluate('CityGame.getState().phase') == 0)
+    check('Growth adds 1000 groups to the Chilean hierarchy before the decision', page.evaluate('CityGame.snapshot().model.population') == 7000 and page.evaluate('CityGame.getState().phase') == 0)
     check('Zipf is introduced as half and one third', 'la mitad y un tercio' in page.locator('#coachTitle').inner_text() and 'no tienen que coincidir' in page.locator('#coachText').inner_text())
     check('Only the three largest cities are shown in the default comparison', page.locator('#bars .bar-row').count() == 3)
     geometry = page.evaluate('''() => Array.from(document.querySelectorAll('#bars .bar-row')).map(row=>({
@@ -195,7 +217,7 @@ with sync_playwright() as p:
     page.locator('#citySelect').select_option('0')
     page.locator('#marketBtn').click()
     check('Selecting market creates a preview without changing the applied rule', not page.evaluate('CityGame.getState().locked') and page.evaluate('CityGame.snapshot().intervention.weight') == 1 and page.evaluate('CityGame.getState().pendingPlan') == 'market')
-    check('The explicit apply button identifies the action and selected city', page.locator('#applyDecisionBtn').is_enabled() and 'Aplicar mi decisión y ver qué pasa' in page.locator('#applyDecisionBtn').inner_text() and 'Rancagua' in page.locator('#decisionSummary').inner_text())
+    check('The explicit apply button identifies the action and selected city', page.locator('#applyDecisionBtn').is_enabled() and 'Aplicar mi decisión y ver qué pasa' in page.locator('#applyDecisionBtn').inner_text() and 'Gran Santiago' in page.locator('#decisionSummary').inner_text())
     page.screenshot(path=str(OUT / '13-confirm-decision.png'))
     page.locator('#applyDecisionBtn').click()
     check('Applying a market selects the centripetal view', page.locator('[data-view="attract"]').get_attribute('aria-pressed') == 'true')
@@ -204,7 +226,7 @@ with sync_playwright() as p:
     check('Inspecting another city does not move the market', page.evaluate('CityGame.getState().target') == 0 and page.evaluate('CityGame.getState().selected') == 1)
     page.clock.fast_forward(120000)
     page.clock.run_for(20)
-    check('Growth finishes without automatically leaving the experiment', page.evaluate('CityGame.getState().phase') == 1 and page.evaluate('CityGame.snapshot().model.population') == 2000)
+    check('Growth finishes without automatically leaving the experiment', page.evaluate('CityGame.getState().phase') == 1 and page.evaluate('CityGame.snapshot().model.population') == 8000)
     page.locator('#nextBtn').click()
     check('Step three introduces the observed effect of the actual decision', page.locator('#resultIntro').is_visible() and 'partió con' in page.locator('#resultIntroSummary').inner_text() and 'atracción centrípeta' in page.locator('#resultIntroEffect').inner_text())
     page.clock.fast_forward(90000)
@@ -213,7 +235,7 @@ with sync_playwright() as p:
     page.screenshot(path=str(OUT / '15-result-introduction.png'))
     page.locator('#resultIntroContinue').click()
     snap = page.evaluate('CityGame.snapshot()')
-    check('Paired branches receive the same total population and foundation draws', snap['phase'] == 2 and snap['model']['population'] == snap['control']['population'] == 2000 and len(snap['model']['cities']) == len(snap['control']['cities']))
+    check('Paired branches receive the same total population and foundation draws', snap['phase'] == 2 and snap['model']['population'] == snap['control']['population'] == 8000 and len(snap['model']['cities']) == len(snap['control']['cities']))
     check('Market changes its city relative to the paired control', snap['model']['cities'][0]['pop'] > snap['control']['cities'][0]['pop'])
     check('Results compare one city in two versions, without showing everything at once', page.locator('#resultBars').is_visible() and not page.locator('#sizePanel').is_visible() and 'dos versiones' in page.locator('#coachTitle').inner_text())
     page.locator('[data-answer="yes"]').click()
@@ -238,7 +260,7 @@ with sync_playwright() as p:
         page.locator('#downloadBtn').click()
     info.value.save_as(OUT / 'result.json')
     exported = json.loads((OUT / 'result.json').read_text())
-    check('Export retains the seed, parameter and intervention', exported['version'] == 8 and exported['pi'] == .2 and exported['intervention']['weight'] == 2 and exported['finished'])
+    check('Export retains the seed, parameter and intervention', exported['version'] == 9 and exported['pi'] == .2 and exported['intervention']['weight'] == 2 and exported['finished'])
     page.locator('#closeSources').click()
     result_before_review = page.evaluate('CityGame.snapshot().model')
     page.locator('#lessonBtn').click()
@@ -263,17 +285,17 @@ with sync_playwright() as p:
     check('The next button opens the experiment introduction', page.locator('#lessonDialog').is_visible() and 'fuerza centrípeta' in page.locator('#lessonDialog').inner_text() and 'fuerza centrífuga' in page.locator('#lessonDialog').inner_text())
     page.clock.fast_forward(600000)
     page.clock.run_for(20)
-    check('The introduction never closes itself and holds population fixed', page.evaluate('CityGame.getState().lessonActive') and page.locator('#lessonDialog').is_visible() and page.evaluate('CityGame.snapshot().model.population') == 1000)
+    check('The introduction never closes itself and holds population fixed', page.evaluate('CityGame.getState().lessonActive') and page.locator('#lessonDialog').is_visible() and page.evaluate('CityGame.snapshot().model.population') == 7000)
     page.locator('#lessonContinueBtn').click()
     page.locator('#marketBtn').click()
     page.clock.fast_forward(600000)
     page.clock.run_for(20)
     check('Unconfirmed market remains a preview indefinitely', page.evaluate('CityGame.getState().pendingPlan') == 'market' and page.evaluate('CityGame.snapshot().intervention.weight') == 1 and not page.evaluate('CityGame.getState().locked'))
-    check('No default scenario or growth is applied after waiting', page.evaluate('CityGame.getState().decisionReason') is None and page.evaluate('CityGame.snapshot().model.population') == 1000)
+    check('No default scenario or growth is applied after waiting', page.evaluate('CityGame.getState().decisionReason') is None and page.evaluate('CityGame.snapshot().model.population') == 7000)
     page.locator('#applyDecisionBtn').click()
     page.clock.fast_forward(61000)
     page.clock.run_for(20)
-    check('A late manual confirmation still completes growth correctly', page.evaluate('CityGame.snapshot().model.population') == 2000 and page.evaluate('CityGame.getState().phase') == 1)
+    check('A late manual confirmation still completes growth correctly', page.evaluate('CityGame.snapshot().model.population') == 8000 and page.evaluate('CityGame.getState().phase') == 1)
 
     page.locator('#restartBtn').click()
     page.locator('#startBtn').click()
@@ -298,7 +320,7 @@ with sync_playwright() as p:
     congested = page.evaluate('CityGame.snapshot()')
     check('Congestion reduces target growth relative to its paired control', congested['model']['cities'][0]['pop'] < congested['control']['cities'][0]['pop'])
     check('Congestion result explains the difference as fewer arrivals rather than loss', 'no significa perder población' in page.locator('#resultBars').inner_text())
-    check('Congestion preserves existing population and regional totals', congested['model']['cities'][0]['pop'] >= baseline_size and congested['model']['population'] == congested['control']['population'] == 2000)
+    check('Congestion preserves existing population and regional totals', congested['model']['cities'][0]['pop'] >= baseline_size and congested['model']['population'] == congested['control']['population'] == 8000)
     page.screenshot(path=str(OUT / '08-congestion-result.png'))
     next_step()
     check('Early completion preserves results', page.evaluate('CityGame.snapshot().finished'))
@@ -308,8 +330,8 @@ with sync_playwright() as p:
     equal_target = page.evaluate('''() => {
       const base=CityGame.snapshot().baseline,seed=CityGame.snapshot().seed,M=CityModel;
       for(const c of base.cities){
-        const a=M.advance(M.clone(base),2000,.2,M.rng(seed^0xBEEF),c.id,2);
-        const b=M.advance(M.clone(base),2000,.2,M.rng(seed^0xBEEF));
+        const a=M.advance(M.clone(base),8000,.2,M.rng(seed^0xBEEF),c.id,2);
+        const b=M.advance(M.clone(base),8000,.2,M.rng(seed^0xBEEF));
         if(a.cities[c.id].pop===b.cities[c.id].pop)return c.id;
       }
       return null;
@@ -362,6 +384,6 @@ with sync_playwright() as p:
     check('Standalone entry and named game are identical', (ROOT / 'index.html').read_text() == HTML)
     check('Offline play makes no external network requests', not requests)
     check('All interactions run without JavaScript errors', not errors)
-    (OUT / 'report.json').write_text(json.dumps({'version':8,'passed':passed,'model_checks':model_checks,'errors':errors,'requests':requests},ensure_ascii=False,indent=2))
+    (OUT / 'report.json').write_text(json.dumps({'version':9,'passed':passed,'model_checks':model_checks,'errors':errors,'requests':requests},ensure_ascii=False,indent=2))
     browser.close()
 print(f'\n{len(passed)} checks passed. Artifacts: {OUT}')
