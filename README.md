@@ -1,17 +1,21 @@
-# Ciudades al azar
+# Ciudades al azar · versión guiada
 
-Prototipo educativo offline para una exposición sobre Fujita, Krugman y Venables, *Economía espacial*, capítulo 11, «Una digresión empírica: el tamaño de las ciudades», pp. 213–223 del PDF proporcionado.
+Juego educativo sobre el capítulo 11 de *Economía espacial* de Fujita, Krugman y Venables, pp. 213–223. Ambientación de una región latinoamericana ficticia, con edificios, viviendas, plazas y avenidas.
 
-Abre **Ciudades-al-azar.html** con doble clic en un navegador moderno. No necesita instalación, servidor, conexión ni cuentas. Todos los gráficos se dibujan localmente. La partida dura como máximo 4 minutos desde «Comenzar simulación»; los controles permiten adelantar etapas. La ficha académica y esta documentación se consultan fuera del tiempo de exposición.
+Abre **Ciudades-al-azar.html** o **index.html** en un navegador moderno. No necesita conexión, instalación, cuentas ni servidor. La partida dura como máximo cuatro minutos y tiene tres pasos:
 
-El mapa y el gráfico permiten seleccionar ciudades. También hay un selector accesible con teclado. El experimento territorial permite decidir durante sus primeros 12 segundos; luego el plan se bloquea para que la comparación conserve una intervención definida. Sin decisión, se continúa sin intervención. Se pueden exportar los resultados como JSON y volver a jugar con otra semilla.
+1. **Mira:** los grupos van llegando y las ciudades crecen. El juego explica la regla de Simon en palabras y Zipf con tres barras.
+2. **Elige:** selecciona una ciudad e instala un mercado, o deja todo igual. Tienes hasta treinta segundos; sin respuesta se conserva el crecimiento original.
+3. **Compara:** observa esa ciudad con tu decisión y sin intervención. Puedes volver a la comparación con Zipf y responder una pregunta final.
 
-Consulta **FUNDAMENTO.md** para las ecuaciones, fuentes por página, limitaciones y conexiones con sistemas urbanos. Las referencias a los capítulos 1 y 10 proceden de la discusión que hace el capítulo 11: no se dispuso de esos capítulos completos.
+El gráfico rango-tamaño logarítmico sigue disponible mediante «Ver gráfico rango-tamaño». Las fórmulas, supuestos, fuentes y exportación JSON se encuentran en «Explicación del capítulo». El mapa, las barras y el gráfico permiten seleccionar ciudades; también hay un selector y controles con teclado. Los botones permiten avanzar más rápido. Volver a jugar genera otra semilla.
 
-Los recursos visuales son dibujos originales generados con Canvas; muestran edificios contemporáneos, viviendas, plazas, avenidas y buses, sin recursos externos. No hay suite de construcción ni dependencias. Las verificaciones del prototipo están en `tests/validate.py` (requiere Playwright y Chromium únicamente para desarrollo, no para jugar).
+Consulta **FUNDAMENTO.md** para la justificación conceptual y **GUION.md** para presentar la experiencia. Las conexiones con los capítulos 1 y 10 proceden de su recapitulación en el capítulo 11; no se dispuso de esos capítulos completos.
 
-## Publicación web
+Todos los recursos son dibujos locales con Canvas. Las verificaciones están en `tests/validate.py` (Playwright y Chromium solo son necesarios para desarrollo).
 
-`index.html` es una copia autónoma del juego y `.nojekyll` permite servirlo como sitio estático. La rama `gh-pages` se prepara como fuente de publicación. Si GitHub Pages aún no está activado, entra a **Settings → Pages**, elige **Deploy from a branch**, selecciona **gh-pages** y **/(root)** y guarda. La URL del sitio solo debe anunciarse como operativa después de comprobar el despliegue.
+## Publicación
 
-Para descargar sin ejecutar: abre `Ciudades-al-azar-entrega.zip` en el repositorio de GitHub y usa **Download raw file**.
+Sitio: https://franherreraneira.github.io/DatascienceCV/
+
+`index.html` y el HTML descargable deben ser idénticos. La rama `gh-pages` sirve el sitio estático desde su raíz. `.nojekyll` evita el procesamiento con Jekyll. El paquete **Ciudades-al-azar-entrega.zip** incluye el juego autónomo y la documentación.
