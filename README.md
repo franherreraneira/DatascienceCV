@@ -5,14 +5,14 @@ Juego educativo sobre el capítulo 11 de *Economía espacial* de Fujita, Krugman
 Abre **Ciudades-al-azar.html** o **index.html** en un navegador moderno. No necesita conexión, instalación, cuentas ni servidor. La partida dura como máximo cinco minutos y tiene tres pasos:
 
 1. **Mira:** los grupos van llegando y las ciudades crecen. El juego explica la regla de Simon en palabras y Zipf con tres barras.
-2. **Elige:** selecciona una ciudad y prueba un mercado, congestión o deja todo igual. Tienes hasta cuarenta y cinco segundos; sin respuesta se conserva el crecimiento original.
+2. **Decide y aplica:** primero aparece una explicación breve de Zipf, Simon y las fuerzas económicas. Después elige una ciudad, marca un escenario y pulsa **Aplicar mi decisión y ver qué pasa**. Marcar una opción solo crea una vista previa. Tienes hasta cuarenta y cinco segundos para confirmar; sin confirmación, se conserva el crecimiento original.
 3. **Compara:** observa esa ciudad con tu decisión y sin intervención. Puedes volver a la comparación con Zipf y responder una pregunta final.
 
 Desde el segundo paso, el mapa ofrece las vistas **Atraen · centrípetas** y **Dispersan · centrífugas**. Selecciona un icono o usa el menú de ejemplos para leer su explicación. Son ocho mecanismos ilustrados; explorar no aplica ninguna intervención. Solo el escenario elegido cambia las probabilidades de llegada. La congestión no elimina población ni representa mudanzas.
 
 El mapa ocupa una mayor parte de la pantalla. **Ver detalle** acerca la ciudad del escenario y **Ampliar mapa** abre una vista grande con sus controles y el reloj. Puedes cerrar esa vista con **Volver al juego** o **Escape**. El reloj sigue avanzando. Cambiar la cámara no altera las reglas ni el escenario.
 
-El gráfico rango-tamaño logarítmico sigue disponible mediante «Ver gráfico rango-tamaño». Las fórmulas, supuestos, fuentes y exportación JSON se encuentran en «Explicación del capítulo». El mapa, las barras y el gráfico permiten seleccionar ciudades; también hay un selector y controles con teclado. Los botones permiten avanzar más rápido. Volver a jugar genera otra semilla.
+El gráfico rango-tamaño logarítmico sigue disponible mediante «Ver gráfico rango-tamaño». Puedes volver a abrir la explicación breve con **Zipf, Simon y fuerzas**, también después de terminar. Sus treinta segundos están incluidos en los cinco minutos, no se añaden al tiempo total. Las fórmulas, supuestos, fuentes y exportación JSON se encuentran en «Explicación del capítulo». El mapa, las barras y el gráfico permiten seleccionar ciudades; también hay un selector y controles con teclado. Los botones permiten avanzar más rápido. Volver a jugar genera otra semilla.
 
 Consulta **FUNDAMENTO.md** para la justificación conceptual y **GUION.md** para presentar la experiencia. Las conexiones con los capítulos 1 y 10 proceden de su recapitulación en el capítulo 11; no se dispuso de esos capítulos completos.
 
