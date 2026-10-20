@@ -1,6 +1,6 @@
 # Validación de la versión guiada con avance manual
 
-Se ejecutó `python3 tests/validate.py` con Playwright y Chromium: **96 comprobaciones aprobadas**. El juego no necesita estas herramientas para ejecutarse.
+Se ejecutó `python3 tests/validate.py` con Playwright y Chromium: **115 comprobaciones aprobadas**. El juego no necesita estas herramientas para ejecutarse.
 
 Se verificaron las tres etapas y sus introducciones. Esperar diez minutos no cambia de etapa, no cierra la explicación y no aplica un escenario por defecto. Una selección pendiente mantiene el peso original y P=1.000 hasta confirmar. Solo «Aplicar mi decisión y ver qué pasa» fija la ciudad y el escenario. Confirmar después de una espera larga permite completar correctamente las nuevas llegadas. El reloj de cinco minutos es orientativo: llegar a cero no termina la partida; «Terminar» lo hace.
 
@@ -17,3 +17,5 @@ El Chromium administrado bloquea `file://`; por eso se ejecutó el contenido exa
 No se realizaron estudios con participantes: la comprensión debe comprobarse durante el ensayo. No se afirma una mejora de aprendizaje medida empíricamente.
 
 Se verificaron los 32 nombres del recorrido chileno, la separación de las ciudades mencionadas en pares y el orden de los primeros diez nombres en el selector. Se revisaron **1.000 emplazamientos**: todos únicos, en terreno seco y fuera de las parcelas rurales. Los centros de los polígonos de agua son rechazados por el mismo comprobador que utiliza la ubicación de ciudades. El mapa incluye islas y cinco áreas rurales; pulsar una parcela abre la explicación sin alterar población ni aplicar un escenario. Su explicación identifica factores inmóviles y declara que esta capa no modifica Simon. Las instrucciones e indicadores identifican «grupos de personas». Se revisaron nuevas capturas del contorno completo y el detalle de campos y ciudades, también en móvil.
+
+Se probaron arrastre real con mouse, zoom con rueda, desplazamiento de teclado, reinicio de cámara y pellizco de dos dedos mediante eventos táctiles de Chromium. Ninguna operación altera población ni confirma un escenario. El buscador funciona sin tildes, centra referencias continentales e insulares y declara su cobertura. Abrir la historia o el catálogo pausa el experimento. Se verificaron las doce observaciones publicadas, la lectura de 2002 (0,825), la selección de 1940 (Santiago 952.000 y Valparaíso 209.900), las 34 filas de la tabla, datos ausentes, aproximaciones y separación explícita de fuentes. Se revisaron capturas de navegación, historia y versión móvil. La verificación de datos publicados se limita a la transcripción visual de la figura y lectura del artículo; no valida censalmente la tabla aportada ni la exhaustividad del catálogo.

@@ -1,0 +1,1833 @@
+{
+  "license": "CC BY 4.0 (GeoNames/lutangar); additions supplied in conversation",
+  "source": "https://github.com/lutangar/cities.json",
+  "retrieved": "2026-10-20",
+  "coverage": "Cities with population >1000 or administrative seats; not a certified complete INE inventory",
+  "places": [
+    {
+      "name": "Putre",
+      "lon": -69.56071,
+      "lat": -18.19821,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Arica",
+      "lon": -70.30058,
+      "lat": -18.47552,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cuya",
+      "lon": -70.17953,
+      "lat": -19.16062,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Colchane",
+      "lon": -68.63763,
+      "lat": -19.27588,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Camiña",
+      "lon": -69.4261,
+      "lat": -19.31286,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Huara",
+      "lon": -69.77205,
+      "lat": -19.99631,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Iquique",
+      "lon": -70.15027,
+      "lat": -20.21326,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pozo Almonte",
+      "lon": -69.7863,
+      "lat": -20.25585,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Alto Hospicio",
+      "lon": -70.1049,
+      "lat": -20.26871,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pica",
+      "lon": -69.33118,
+      "lat": -20.49128,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Tocopilla",
+      "lon": -70.19792,
+      "lat": -22.09198,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "María Elena",
+      "lon": -69.66178,
+      "lat": -22.34449,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Calama",
+      "lon": -68.92371,
+      "lat": -22.45667,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Sierra Gorda",
+      "lon": -69.31959,
+      "lat": -22.89061,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Pedro de Atacama",
+      "lon": -68.20113,
+      "lat": -22.9111,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Mejillones",
+      "lon": -70.44703,
+      "lat": -23.10003,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Baquedano",
+      "lon": -69.84055,
+      "lat": -23.33374,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Antofagasta",
+      "lon": -70.39752,
+      "lat": -23.65094,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Taltal",
+      "lon": -70.48554,
+      "lat": -25.40713,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chañaral",
+      "lon": -70.61648,
+      "lat": -26.34298,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Diego de Almagro",
+      "lon": -70.04556,
+      "lat": -26.39022,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Caldera",
+      "lon": -70.81921,
+      "lat": -27.06812,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Hanga Roa",
+      "lon": -109.42438,
+      "lat": -27.15253,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Copiapó",
+      "lon": -70.33219,
+      "lat": -27.36737,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Tierra Amarilla",
+      "lon": -70.26255,
+      "lat": -27.46633,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Huasco",
+      "lon": -71.22276,
+      "lat": -28.46599,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Freirina",
+      "lon": -71.08124,
+      "lat": -28.50917,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Vallenar",
+      "lon": -70.75938,
+      "lat": -28.57617,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Alto del Carmen",
+      "lon": -70.48651,
+      "lat": -28.75946,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Higuera",
+      "lon": -71.2019,
+      "lat": -29.51195,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Serena",
+      "lon": -71.25014,
+      "lat": -29.90591,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coquimbo",
+      "lon": -71.33947,
+      "lat": -29.95332,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Paiguano",
+      "lon": -70.51708,
+      "lat": -30.02884,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Vicuña",
+      "lon": -70.71274,
+      "lat": -30.03541,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Andacollo",
+      "lon": -71.08534,
+      "lat": -30.23449,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Ovalle",
+      "lon": -71.19901,
+      "lat": -30.60106,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Monte Patria",
+      "lon": -70.9577,
+      "lat": -30.69496,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Punitaqui",
+      "lon": -71.2586,
+      "lat": -30.83448,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Combarbalá",
+      "lon": -71.00304,
+      "lat": -31.17863,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Canela",
+      "lon": -70.85,
+      "lat": -31.58333,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Huentelauquén",
+      "lon": -71.53425,
+      "lat": -31.58442,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Illapel",
+      "lon": -71.16967,
+      "lat": -31.63349,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Salamanca",
+      "lon": -70.96389,
+      "lat": -31.77922,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Vilos",
+      "lon": -71.50045,
+      "lat": -31.91292,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Petorca",
+      "lon": -70.93478,
+      "lat": -32.25231,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cabildo",
+      "lon": -71.07167,
+      "lat": -32.43134,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Ligua",
+      "lon": -71.23106,
+      "lat": -32.45242,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Papudo",
+      "lon": -71.44362,
+      "lat": -32.50799,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Putaendo",
+      "lon": -70.7184,
+      "lat": -32.62642,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Catemu",
+      "lon": -71.03333,
+      "lat": -32.63333,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Nogales",
+      "lon": -71.23333,
+      "lat": -32.71667,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puchuncaví",
+      "lon": -71.41514,
+      "lat": -32.72575,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Santa María",
+      "lon": -70.65666,
+      "lat": -32.74732,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Felipe",
+      "lon": -70.72584,
+      "lat": -32.74976,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Panquehue",
+      "lon": -70.83614,
+      "lat": -32.77143,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Hacienda La Calera",
+      "lon": -71.21667,
+      "lat": -32.78333,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quintero",
+      "lon": -71.53222,
+      "lat": -32.78588,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Calera",
+      "lon": -71.19795,
+      "lat": -32.78676,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Loncura",
+      "lon": -71.50556,
+      "lat": -32.78778,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Hijuelas",
+      "lon": -71.14635,
+      "lat": -32.79828,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Esteban",
+      "lon": -70.5807,
+      "lat": -32.79871,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Cruz",
+      "lon": -71.22634,
+      "lat": -32.82748,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Rinconada de Los Andes",
+      "lon": -70.68841,
+      "lat": -32.83316,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Andes",
+      "lon": -70.59827,
+      "lat": -32.83369,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Llaillay",
+      "lon": -70.95623,
+      "lat": -32.84043,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Calle Larga",
+      "lon": -70.62595,
+      "lat": -32.85473,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quillota",
+      "lon": -71.24882,
+      "lat": -32.88341,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Concón",
+      "lon": -71.51619,
+      "lat": -32.92203,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Olmué",
+      "lon": -71.19136,
+      "lat": -32.99577,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Limache",
+      "lon": -71.26084,
+      "lat": -33.01327,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Viña del Mar",
+      "lon": -71.55183,
+      "lat": -33.02457,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Valparaíso",
+      "lon": -71.62963,
+      "lat": -33.036,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quilpué",
+      "lon": -71.44249,
+      "lat": -33.04752,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Villa Alemana",
+      "lon": -71.3729,
+      "lat": -33.04823,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Tiltil",
+      "lon": -70.92924,
+      "lat": -33.0831,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Placilla",
+      "lon": -71.56806,
+      "lat": -33.1144,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Colina",
+      "lon": -70.67474,
+      "lat": -33.20443,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Batuco",
+      "lon": -70.80922,
+      "lat": -33.23283,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chicureo",
+      "lon": -70.65333,
+      "lat": -33.28379,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lampa",
+      "lon": -70.87561,
+      "lat": -33.2863,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Casablanca",
+      "lon": -71.40311,
+      "lat": -33.31712,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quilicura",
+      "lon": -70.71388,
+      "lat": -33.36799,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Algarrobo",
+      "lon": -71.67654,
+      "lat": -33.36952,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Curacaví",
+      "lon": -71.12708,
+      "lat": -33.39762,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "El Quisco",
+      "lon": -71.69388,
+      "lat": -33.39772,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Renca",
+      "lon": -70.70619,
+      "lat": -33.4019,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Providencia",
+      "lon": -70.60454,
+      "lat": -33.43107,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lo Prado",
+      "lon": -70.72552,
+      "lat": -33.4443,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Ñuñoa",
+      "lon": -70.58279,
+      "lat": -33.44735,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "El Tabo",
+      "lon": -71.66683,
+      "lat": -33.45548,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Santiago",
+      "lon": -70.64827,
+      "lat": -33.45694,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Villa Presidente Frei",
+      "lon": -70.58024,
+      "lat": -33.46069,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Peñalolén",
+      "lon": -70.53411,
+      "lat": -33.46836,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Maipú",
+      "lon": -70.7651,
+      "lat": -33.51421,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "María Pinto",
+      "lon": -71.12199,
+      "lat": -33.5172,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cartagena",
+      "lon": -71.60761,
+      "lat": -33.55384,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Padre Hurtado",
+      "lon": -70.80584,
+      "lat": -33.56839,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Pintana",
+      "lon": -70.63419,
+      "lat": -33.58331,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Bernardo",
+      "lon": -70.6996,
+      "lat": -33.59217,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Antonio",
+      "lon": -71.60746,
+      "lat": -33.59473,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Peñaflor",
+      "lon": -70.87649,
+      "lat": -33.60627,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puente Alto",
+      "lon": -70.57577,
+      "lat": -33.61169,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Calera de Tango",
+      "lon": -70.79912,
+      "lat": -33.62238,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Santo Domingo",
+      "lon": -71.62723,
+      "lat": -33.63615,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pirque",
+      "lon": -70.57361,
+      "lat": -33.63638,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San José de Maipo",
+      "lon": -70.35318,
+      "lat": -33.63912,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Talagante",
+      "lon": -70.92734,
+      "lat": -33.66386,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "El Monte",
+      "lon": -70.98482,
+      "lat": -33.67969,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Melipilla",
+      "lon": -71.21528,
+      "lat": -33.68909,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Buin",
+      "lon": -70.74281,
+      "lat": -33.73257,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Isla de Maipo",
+      "lon": -70.8977,
+      "lat": -33.74681,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Islita",
+      "lon": -70.86667,
+      "lat": -33.75,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Paine",
+      "lon": -70.74109,
+      "lat": -33.80796,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Francisco de Mostazal",
+      "lon": -70.7104,
+      "lat": -33.98219,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Villa Alhué",
+      "lon": -71.10033,
+      "lat": -34.03268,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Codegua",
+      "lon": -70.66876,
+      "lat": -34.03563,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Graneros",
+      "lon": -70.72747,
+      "lat": -34.06863,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Rancagua",
+      "lon": -70.74053,
+      "lat": -34.1691,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Machalí",
+      "lon": -70.64933,
+      "lat": -34.18082,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coya",
+      "lon": -70.53138,
+      "lat": -34.20557,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Olivar",
+      "lon": -70.81944,
+      "lat": -34.20968,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Doñihue",
+      "lon": -70.96479,
+      "lat": -34.22631,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Requínoa",
+      "lon": -70.81683,
+      "lat": -34.28557,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coltauco",
+      "lon": -71.08374,
+      "lat": -34.28846,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Las Cabras",
+      "lon": -71.30616,
+      "lat": -34.29027,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pichidegua",
+      "lon": -71.28826,
+      "lat": -34.35497,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quinta de Tilcoco",
+      "lon": -70.96527,
+      "lat": -34.3555,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pichilemu",
+      "lon": -72.0,
+      "lat": -34.38333,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Peumo",
+      "lon": -71.17559,
+      "lat": -34.38689,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Marchihue",
+      "lon": -71.61938,
+      "lat": -34.39754,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Rengo",
+      "lon": -70.85834,
+      "lat": -34.40639,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Vicente",
+      "lon": -71.08333,
+      "lat": -34.43333,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Vicente de Tagua Tagua",
+      "lon": -71.07751,
+      "lat": -34.43859,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Rinconada de Malloa",
+      "lon": -70.94183,
+      "lat": -34.43975,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Peralillo",
+      "lon": -71.48043,
+      "lat": -34.47804,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Fernando",
+      "lon": -70.99,
+      "lat": -34.59,
+      "source": "Ancla aportada en la conversación"
+    },
+    {
+      "name": "Palmilla",
+      "lon": -71.36368,
+      "lat": -34.59258,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Santa Cruz",
+      "lon": -71.36576,
+      "lat": -34.63881,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Paredones",
+      "lon": -71.89922,
+      "lat": -34.64808,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Nancagua",
+      "lon": -71.19724,
+      "lat": -34.65187,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chimbarongo",
+      "lon": -71.0434,
+      "lat": -34.71247,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chépica",
+      "lon": -71.27292,
+      "lat": -34.72731,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lolol",
+      "lon": -71.6107,
+      "lat": -34.73703,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Peor Es Nada",
+      "lon": -71.04045,
+      "lat": -34.78238,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Teno",
+      "lon": -71.16219,
+      "lat": -34.87055,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Rauco",
+      "lon": -71.31722,
+      "lat": -34.92546,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Romeral",
+      "lon": -71.1235,
+      "lat": -34.96127,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Hualañe",
+      "lon": -71.80252,
+      "lat": -34.9754,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Curicó",
+      "lon": -71.23943,
+      "lat": -34.98279,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Sagrada Familia",
+      "lon": -71.38424,
+      "lat": -34.99919,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Molina",
+      "lon": -71.28232,
+      "lat": -35.11428,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Rafael",
+      "lon": -71.51906,
+      "lat": -35.30624,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Constitución",
+      "lon": -72.41156,
+      "lat": -35.33321,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pelarco",
+      "lon": -71.44508,
+      "lat": -35.38442,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pencahue",
+      "lon": -71.80054,
+      "lat": -35.39346,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Talca",
+      "lon": -71.64974,
+      "lat": -35.4232,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Maule",
+      "lon": -71.68891,
+      "lat": -35.52249,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Clemente",
+      "lon": -71.487,
+      "lat": -35.53777,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Empedrado",
+      "lon": -72.2776,
+      "lat": -35.59157,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Javier",
+      "lon": -71.72924,
+      "lat": -35.5952,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Villa Alegre",
+      "lon": -71.7443,
+      "lat": -35.67296,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Colbún",
+      "lon": -71.40568,
+      "lat": -35.69494,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chanco",
+      "lon": -72.53305,
+      "lat": -35.73674,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Yerbas Buenas",
+      "lon": -71.5853,
+      "lat": -35.74816,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Linares",
+      "lon": -71.59308,
+      "lat": -35.84667,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Longaví",
+      "lon": -71.6836,
+      "lat": -35.96496,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cauquenes",
+      "lon": -72.32248,
+      "lat": -35.9671,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Retiro",
+      "lon": -71.75771,
+      "lat": -36.05172,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cobquecura",
+      "lon": -72.79401,
+      "lat": -36.13251,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Parral",
+      "lon": -71.82605,
+      "lat": -36.14311,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quirihue",
+      "lon": -72.54118,
+      "lat": -36.27998,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "El Carmen",
+      "lon": -72.03713,
+      "lat": -36.29126,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Ninhue",
+      "lon": -72.3987,
+      "lat": -36.39418,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Carlos",
+      "lon": -71.958,
+      "lat": -36.42477,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coelemu",
+      "lon": -72.7032,
+      "lat": -36.48741,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Nicolás",
+      "lon": -72.21555,
+      "lat": -36.50122,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Fabián de Alico",
+      "lon": -71.58608,
+      "lat": -36.51952,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Dichato",
+      "lon": -72.9352,
+      "lat": -36.54823,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chillán",
+      "lon": -72.10344,
+      "lat": -36.60664,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Tomé",
+      "lon": -72.95593,
+      "lat": -36.61756,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chillán Viejo",
+      "lon": -72.13194,
+      "lat": -36.62297,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coihueco",
+      "lon": -71.83068,
+      "lat": -36.62785,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pinto",
+      "lon": -71.89226,
+      "lat": -36.70356,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Talcahuano",
+      "lon": -73.11684,
+      "lat": -36.72494,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Penco",
+      "lon": -72.99528,
+      "lat": -36.74075,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Bulnes",
+      "lon": -72.29854,
+      "lat": -36.74232,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quillón",
+      "lon": -72.47481,
+      "lat": -36.74553,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Hualpén",
+      "lon": -73.10165,
+      "lat": -36.78908,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Ignacio",
+      "lon": -72.03153,
+      "lat": -36.79971,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Florida",
+      "lon": -72.66097,
+      "lat": -36.82399,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Concepción",
+      "lon": -73.04977,
+      "lat": -36.82699,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Pedro de la Paz",
+      "lon": -73.10028,
+      "lat": -36.83897,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "El Carmen",
+      "lon": -72.0261,
+      "lat": -36.89834,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chiguayante",
+      "lon": -73.02841,
+      "lat": -36.9256,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Hualqui",
+      "lon": -72.93559,
+      "lat": -36.97266,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pemuco",
+      "lon": -72.09611,
+      "lat": -36.97792,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coronel",
+      "lon": -73.14019,
+      "lat": -37.03386,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cabrero",
+      "lon": -72.40468,
+      "lat": -37.03394,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lota",
+      "lon": -73.1577,
+      "lat": -37.08994,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Yumbel",
+      "lon": -72.56084,
+      "lat": -37.0982,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Yungay",
+      "lon": -72.01984,
+      "lat": -37.11977,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Santa Juana",
+      "lon": -72.9433,
+      "lat": -37.1751,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Huepil",
+      "lon": -71.94161,
+      "lat": -37.23943,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Arauco",
+      "lon": -73.31752,
+      "lat": -37.2463,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Laja",
+      "lon": -72.71105,
+      "lat": -37.28415,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Tucapel",
+      "lon": -71.94929,
+      "lat": -37.29079,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Antuco",
+      "lon": -71.67467,
+      "lat": -37.33007,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Villa Mercedes",
+      "lon": -71.97949,
+      "lat": -37.40421,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Ángeles",
+      "lon": -72.35366,
+      "lat": -37.46973,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quilleco",
+      "lon": -71.98157,
+      "lat": -37.47023,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Curanilahue",
+      "lon": -73.34495,
+      "lat": -37.47793,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Nacimiento",
+      "lon": -72.67307,
+      "lat": -37.50253,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Negrete",
+      "lon": -72.52833,
+      "lat": -37.58668,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lebu",
+      "lon": -73.65356,
+      "lat": -37.60825,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Álamos",
+      "lon": -73.46008,
+      "lat": -37.62797,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Santa Bárbara",
+      "lon": -72.02252,
+      "lat": -37.66824,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Renaico",
+      "lon": -72.58412,
+      "lat": -37.67141,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quilaco",
+      "lon": -71.99948,
+      "lat": -37.68371,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Mulchén",
+      "lon": -72.24099,
+      "lat": -37.71893,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Angol",
+      "lon": -72.71636,
+      "lat": -37.79519,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cañete",
+      "lon": -73.39616,
+      "lat": -37.80128,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Collipulli",
+      "lon": -72.43438,
+      "lat": -37.95453,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Sauces",
+      "lon": -72.83393,
+      "lat": -37.98119,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Contulmo",
+      "lon": -73.22991,
+      "lat": -38.01556,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Purén",
+      "lon": -73.07145,
+      "lat": -38.0334,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Ercilla",
+      "lon": -72.37425,
+      "lat": -38.06323,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lumaco",
+      "lon": -72.90551,
+      "lat": -38.16485,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Capitán Pastene",
+      "lon": -72.99253,
+      "lat": -38.19356,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Victoria",
+      "lon": -72.33292,
+      "lat": -38.23291,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Traiguén",
+      "lon": -72.67027,
+      "lat": -38.2496,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Laureles",
+      "lon": -73.0594,
+      "lat": -38.25818,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Tirúa",
+      "lon": -73.49149,
+      "lat": -38.34179,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Galvarino",
+      "lon": -72.78151,
+      "lat": -38.41359,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Perquenco",
+      "lon": -72.3773,
+      "lat": -38.42178,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Curacautín",
+      "lon": -71.88923,
+      "lat": -38.44064,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lonquimay",
+      "lon": -71.37049,
+      "lat": -38.45389,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lautaro",
+      "lon": -72.43652,
+      "lat": -38.53066,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cholchol",
+      "lon": -72.84572,
+      "lat": -38.60183,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Vilcún",
+      "lon": -72.22565,
+      "lat": -38.66875,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Carahue",
+      "lon": -73.16101,
+      "lat": -38.71122,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Temuco",
+      "lon": -72.59738,
+      "lat": -38.73628,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Nueva Imperial",
+      "lon": -72.95025,
+      "lat": -38.74451,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Padre Las Casas",
+      "lon": -72.5982,
+      "lat": -38.76081,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Labranza",
+      "lon": -72.75296,
+      "lat": -38.76523,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Saavedra",
+      "lon": -73.39713,
+      "lat": -38.78702,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Melipeuco",
+      "lon": -71.69334,
+      "lat": -38.85243,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cunco",
+      "lon": -72.03151,
+      "lat": -38.93181,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Freire",
+      "lon": -72.62653,
+      "lat": -38.95252,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pitrufquén",
+      "lon": -72.63721,
+      "lat": -38.98635,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Teodoro Schmidt",
+      "lon": -73.08927,
+      "lat": -38.99442,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Gorbea",
+      "lon": -72.67602,
+      "lat": -39.10164,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Nueva Toltén",
+      "lon": -73.16448,
+      "lat": -39.17852,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Pucón",
+      "lon": -71.95427,
+      "lat": -39.28223,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Villarrica",
+      "lon": -72.2279,
+      "lat": -39.28569,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Curarrehue",
+      "lon": -71.58748,
+      "lat": -39.36019,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Loncoche",
+      "lon": -72.63087,
+      "lat": -39.36708,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lanco",
+      "lon": -72.77117,
+      "lat": -39.45246,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San José de la Mariquina",
+      "lon": -72.9657,
+      "lat": -39.53635,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Panguipulli",
+      "lon": -72.33269,
+      "lat": -39.64355,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Las Animas",
+      "lon": -73.21821,
+      "lat": -39.80867,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Valdivia",
+      "lon": -73.24589,
+      "lat": -39.81422,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Lagos",
+      "lon": -72.80914,
+      "lat": -39.8635,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Las Gaviotas",
+      "lon": -73.18834,
+      "lat": -39.86653,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Corral",
+      "lon": -73.43101,
+      "lat": -39.8873,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Paillaco",
+      "lon": -72.87935,
+      "lat": -40.06822,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Futrono",
+      "lon": -72.38536,
+      "lat": -40.1295,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Unión",
+      "lon": -73.08167,
+      "lat": -40.29313,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Lago Ranco",
+      "lon": -72.48049,
+      "lat": -40.32272,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Río Bueno",
+      "lon": -72.95564,
+      "lat": -40.33494,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "San Pablo",
+      "lon": -73.01085,
+      "lat": -40.41348,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Osorno",
+      "lon": -73.13348,
+      "lat": -40.57395,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puyehue",
+      "lon": -72.60172,
+      "lat": -40.65944,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Río Negro",
+      "lon": -73.21546,
+      "lat": -40.79644,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Purranque",
+      "lon": -73.15913,
+      "lat": -40.91305,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Frutillar",
+      "lon": -73.0581,
+      "lat": -41.12162,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Fresia",
+      "lon": -73.42102,
+      "lat": -41.15364,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Ensenada",
+      "lon": -72.5384,
+      "lat": -41.20746,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Llanquihue",
+      "lon": -73.00649,
+      "lat": -41.25603,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Varas",
+      "lon": -72.98538,
+      "lat": -41.31946,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Los Muermos",
+      "lon": -73.46237,
+      "lat": -41.39556,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Montt",
+      "lon": -72.94237,
+      "lat": -41.4693,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cochamó",
+      "lon": -72.30789,
+      "lat": -41.49752,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Maullín",
+      "lon": -73.59833,
+      "lat": -41.61778,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Calbuco",
+      "lon": -73.13049,
+      "lat": -41.77338,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Ancud",
+      "lon": -73.81622,
+      "lat": -41.8707,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Dalcahue",
+      "lon": -73.65011,
+      "lat": -42.37845,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Castro",
+      "lon": -73.77319,
+      "lat": -42.4721,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chonchi",
+      "lon": -73.775,
+      "lat": -42.62387,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chaitén",
+      "lon": -72.70632,
+      "lat": -42.91596,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Quellón",
+      "lon": -73.61661,
+      "lat": -43.11819,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Futaleufú",
+      "lon": -71.86722,
+      "lat": -43.18492,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Palena",
+      "lon": -71.80434,
+      "lat": -43.61876,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "La Junta",
+      "lon": -72.40554,
+      "lat": -43.97434,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Cisnes",
+      "lon": -72.69695,
+      "lat": -44.74736,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Aysén",
+      "lon": -72.69184,
+      "lat": -45.40303,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Chacabuco",
+      "lon": -72.81667,
+      "lat": -45.46667,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Coyhaique",
+      "lon": -72.06619,
+      "lat": -45.57524,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Chile Chico",
+      "lon": -71.72375,
+      "lat": -46.541,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cochrane",
+      "lon": -72.5695,
+      "lat": -47.2557,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Natales",
+      "lon": -72.50603,
+      "lat": -51.72987,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Punta Arenas",
+      "lon": -70.90922,
+      "lat": -53.16282,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Porvenir",
+      "lon": -70.36629,
+      "lat": -53.296,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Cámeron",
+      "lon": -69.64693,
+      "lat": -53.63988,
+      "source": "GeoNames / lutangar"
+    },
+    {
+      "name": "Puerto Williams",
+      "lon": -67.60963,
+      "lat": -54.93355,
+      "source": "GeoNames / lutangar"
+    }
+  ],
+  "modifications": "Conversational anchors added; duplicate Cañete and an inconsistent Vallenar entry removed. El Carmen homonyms retained with coordinates."
+}
