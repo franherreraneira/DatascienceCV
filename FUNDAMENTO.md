@@ -8,6 +8,12 @@ Se examinaron visualmente las seis hojas escaneadas del archivo `ECONOMIA ESPACI
 
 La interfaz se organiza en tres momentos: mirar, elegir y comparar. La explicación inicial de Zipf usa tres barras de población en escala lineal, con marcas en el tamaño de la primera ciudad, su mitad y su tercio. El gráfico logarítmico de las 50 mayores sigue disponible mediante un botón. Las fórmulas, los supuestos y las referencias están en «Explicación del capítulo», fuera de las instrucciones principales. Esta simplificación de la interfaz no cambia el mecanismo probabilístico.
 
+## Mapa y cámara
+
+El mapa general se amplía respecto de la versión anterior: ocupa una mayor proporción horizontal y tiene más altura. El tamaño de los edificios se adapta a la escala de la cámara. En «Ver detalle», el centro se sitúa en la ciudad elegida (o en la ciudad fijada por el escenario) y la escala se multiplica por 1,9. En ese modo, los asentamientos pequeños se dibujan como viviendas en vez de puntos.
+
+«Ampliar mapa» traslada el mismo mapa interactivo a un diálogo grande, con reloj, selección de ciudad y exploración de fuerzas. Se cierra con «Volver al juego» o Escape; no crea otra simulación, no duplica población ni cambia las probabilidades. El reloj continúa durante la exploración. El recorte de cámara solo limita lo que se dibuja: todas las ciudades siguen participando en el modelo y en los gráficos.
+
 ## Zipf: hecho estilizado, no motor del juego
 
 En pp. 213–215, el número de ciudades por encima de un tamaño S se aproxima mediante N(S)=k S^(-a), con a cercano a 1. La regla rango-tamaño equivalente es S(r)=C r^(-1/a); para a=1, la segunda ciudad tiene la mitad del tamaño de la primera, la tercera un tercio, etc. El capítulo informa para las áreas metropolitanas estadounidenses ln(N)=10,549−1,004 ln(S). También advierte dificultades de comparabilidad de las definiciones urbanas y la importancia de estudiar la cola superior.
@@ -51,7 +57,7 @@ En el control se mantiene Simon. En la intervención:
 
 El jugador elige una ciudad y una sola acción: instalar un mercado w=2 (atracción ilustrativa), probar congestión w=0,5 (dispersión ilustrativa) o dejar todo igual w=1 (sin intervención). Los demás pesos son uno. El incremento proporcional esperado ahora depende del peso territorial; se rompe la neutralidad entre ciudades. Los factores son elecciones de diseño, no parámetros del libro. No hay presupuesto, bienestar, salarios, alquileres, firmas ni transporte modelados; por eso no se llama política óptima a ningún resultado. La intervención no afecta a la probabilidad de fundación y nunca se aplica a la rama de control.
 
-Se elige el plan antes del crecimiento de las ramas. La ciudad objetivo se bloquea al confirmar o tras treinta segundos sin respuesta; seleccionar otras ciudades después solo inspecciona información. Esto evita tratar como un único experimento una intervención que cambia silenciosamente de objetivo. Si no se toma una decisión, se ejecuta el control sin intervención y se indica en pantalla.
+Se elige el plan antes del crecimiento de las ramas. La ciudad objetivo se bloquea al confirmar o tras cuarenta y cinco segundos sin respuesta; seleccionar otras ciudades después solo inspecciona información. Esto evita tratar como un único experimento una intervención que cambia silenciosamente de objetivo. Si no se toma una decisión, se ejecuta el control sin intervención y se indica en pantalla.
 
 ## Fuerzas visibles: una capa conceptual separada
 
@@ -78,9 +84,9 @@ El control siempre conserva Simon. Las dos ramas mantienen iguales la población
 
 ## Secuencia y discusión crítica
 
-El reloj comienza al pulsar «Empezar». Hay **80 s para mirar**, **90 s para elegir y observar la intervención**, y **70 s para comparar y concluir**: 240 s en total. Los primeros 15 s presentan la regla con diez ciudades iguales; durante los siguientes 50 s se simulan las llegadas hasta P=1.000 y los últimos 15 s introducen la comparación con Zipf. Se permite avanzar antes.
+El reloj comienza al pulsar «Empezar». Hay **90 s para mirar**, **120 s para elegir y observar la intervención**, y **90 s para comparar y concluir**: 300 s en total. Los primeros 15 s presentan la regla con diez ciudades iguales; durante los siguientes 60 s se simulan las llegadas hasta P=1.000 y los últimos 15 s introducen la comparación con Zipf. Se permite avanzar antes.
 
-En el segundo momento hay hasta treinta segundos para elegir una ciudad y pulsar «Instalar un mercado», «Probar congestión» o «Dejar todo igual». Pulsar una opción la fija y comienza el crecimiento de ambas ramas; el tiempo restante de esa etapa se usa para añadir otras 1.000 unidades. Si no hay respuesta, se aplica la opción neutral al cumplirse treinta segundos. Se conserva un único objetivo para todo el experimento. En el tercer momento se compara esa ciudad con su contrafactual sin intervención; una pestaña permite explorar Zipf aparte, evitando presentar simultáneamente todos los resultados.
+En el segundo momento hay hasta cuarenta y cinco segundos para elegir una ciudad y pulsar «Instalar un mercado», «Probar congestión» o «Dejar todo igual». Pulsar una opción la fija y comienza el crecimiento de ambas ramas; el tiempo restante de esa etapa se usa para añadir otras 1.000 unidades. Si no hay respuesta, se aplica la opción neutral al cumplirse cuarenta y cinco segundos. Se conserva un único objetivo para todo el experimento. En el tercer momento se compara esa ciudad con su contrafactual sin intervención; una pestaña permite explorar Zipf aparte, evitando presentar simultáneamente todos los resultados.
 
 El reloj no se pausa al abrir la ficha y recupera el tiempo transcurrido cuando la pestaña vuelve a estar visible. Las conclusiones y los gráficos quedan disponibles después del final. No hay victoria por tamaño ni incentivos para confundir concentración con bienestar.
 

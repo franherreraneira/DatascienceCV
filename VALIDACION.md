@@ -1,8 +1,8 @@
 # Validación de la versión guiada
 
-Se ejecutó `python3 tests/validate.py` con Playwright y Chromium: **55 comprobaciones aprobadas**. El juego no necesita estas herramientas para ejecutarse.
+Se ejecutó `python3 tests/validate.py` con Playwright y Chromium: **67 comprobaciones aprobadas**. El juego no necesita estas herramientas para ejecutarse.
 
-Se verificaron las tres etapas, las instrucciones sin selección de parámetros, la aparición progresiva de los controles y la secuencia automática completa de 240 segundos. La opción neutral se aplica si no hay respuesta en treinta segundos y conserva exactamente el mismo resultado en ambas ramas. Instalar el mercado fija su ciudad objetivo; inspeccionar otra ciudad después no lo mueve.
+Se verificaron las tres etapas, las instrucciones sin selección de parámetros, la aparición progresiva de los controles y la secuencia automática completa de 300 segundos. La opción neutral se aplica si no hay respuesta en cuarenta y cinco segundos y conserva exactamente el mismo resultado en ambas ramas. Instalar el mercado fija su ciudad objetivo; inspeccionar otra ciudad después no lo mueve.
 
 Las tres barras iniciales muestran tamaños reales en una escala lineal común; las referencias de Zipf están en la mitad y el tercio de la mayor. La selección de barras se vincula al mapa. El gráfico logarítmico de las cincuenta mayores se puede explorar por teclado y con clics. Los resultados presentan la ciudad objetivo en dos versiones, y la pregunta final distingue patrón y causa.
 
@@ -17,3 +17,5 @@ No se realizaron estudios con participantes: la simplificación de la interfaz e
 En la ampliación de fuerzas se verificó que Simon no dibuja flechas territoriales y que la capa conceptual aparece desde el segundo paso. Hay cuatro ejemplos centrípetos y cuatro centrífugos. El selector y los iconos actualizan la explicación; explorar no cambia población ni aplica escenarios. Se confirmó que el mercado selecciona la vista de atracción y la congestión, la de dispersión. El escenario de congestión reduce la llegada de grupos a la ciudad objetivo frente al control de la misma semilla, preserva la población previa y mantiene P=2.000 en ambas ramas. Las capturas incluyen atracción, dispersión y resultado con congestión.
 
 Las tarjetas de fuerzas se reubican cuando la ciudad elegida queda en un borde, para no tapar su posición. Se comprobó la visibilidad de la ciudad seleccionada en la geometría del esquema.
+
+En la versión de cinco minutos se comprobó que el reloj comienza en 5:00, que la partida sigue activa después de cuatro minutos y que termina automáticamente a los 300 segundos. La elección permanece abierta después de treinta segundos y se aplica la opción neutral al superar cuarenta y cinco. La vista ampliada mantiene una sola instancia del mapa, conserva sus controles y reloj, enfoca la ciudad del escenario y vuelve al juego con Escape o el botón, también en móvil. Ampliar o acercar no modifica la población. Se revisaron capturas del mapa completo y del detalle.
