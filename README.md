@@ -1,14 +1,18 @@
 # Ciudades al azar · versión guiada
 
-Juego educativo sobre el capítulo 11 de *Economía espacial* de Fujita, Krugman y Venables, pp. 213–223. Ambientación de una región latinoamericana ficticia, con edificios, viviendas, plazas y avenidas.
+Juego educativo sobre el capítulo 11 de *Economía espacial* de Fujita, Krugman y Venables, pp. 213–223. Mapa esquemático de Chile con ciudades de nombres reales y poblaciones simuladas. Las ubicaciones son aproximadas y el ancho del país se amplía para facilitar la proyección.
 
 Abre **Ciudades-al-azar.html** o **index.html** en un navegador moderno. No necesita conexión, instalación, cuentas ni servidor. La exposición tiene una guía de cinco minutos y tres pasos. Tú decides cuándo avanzar: el reloj no cierra explicaciones, no elige escenarios ni termina la partida.
 
-1. **Mira:** los grupos van llegando y las ciudades crecen. El juego explica la regla de Simon en palabras y Zipf con tres barras.
+1. **Mira:** los grupos de personas van llegando y las ciudades crecen. El juego explica la regla de Simon en palabras y Zipf con tres barras.
 2. **Decide y aplica:** primero aparece una explicación breve de Zipf, Simon y las fuerzas económicas. Después elige una ciudad, marca un escenario y pulsa **Aplicar mi decisión y ver qué pasa**. Marcar una opción solo crea una vista previa. No hay límite para confirmar: sin pulsar ese botón, la población espera y no se aplica ningún escenario.
 3. **Compara:** una introducción muestra los tamaños observados y explica la diferencia con y sin intervención. Después explora las dos versiones de la ciudad. Puedes volver a la comparación con Zipf y responder una pregunta final.
 
 Desde el segundo paso, el mapa ofrece las vistas **Atraen · centrípetas** y **Dispersan · centrífugas**. Selecciona un icono o usa el menú de ejemplos para leer su explicación. Son ocho mecanismos ilustrados; explorar no aplica ninguna intervención. Solo el escenario elegido cambia las probabilidades de llegada. La congestión no elimina población ni representa mudanzas.
+
+El mapa incluye costa, islas, relieve, ríos y lagos esquemáticos. Los emplazamientos se buscan sobre tierra seca, con margen de seguridad y sin ocupar las parcelas rurales. Las ciudades nombradas siguen en el selector el recorrido propuesto desde Rancagua hasta Puerto Williams; no es una medición de distancias viales desde Santiago. Villarrica y Pucón, así como Ancud y Castro, se muestran por separado; Concepción / Talcahuano se mantiene como una entrada. Tras los 32 nombres, las fundaciones adicionales se llaman «Localidad simulada». Santiago aparece como referencia geográfica, sin añadir una ciudad al modelo.
+
+Cinco áreas de agricultura, praderas y recursos rurales ilustran **factores inmóviles**: parte de la actividad se mantiene donde están la tierra y los recursos, fuera de grandes centros. En la vista de dispersión, elige «Factores inmóviles» o pulsa un campo del mapa para explorar esa explicación. Las parcelas tienen colores y surcos propios y se distinguen mejor con el mapa ampliado y el detalle. Esta capa es conceptual; no cambia las reglas de Simon ni simula población rural.
 
 El mapa ocupa una mayor parte de la pantalla. **Ver detalle** acerca la ciudad del escenario y **Ampliar mapa** abre una vista grande con sus controles y el reloj. Puedes cerrar esa vista con **Volver al juego** o **Escape**. El reloj sigue avanzando. Cambiar la cámara no altera las reglas ni el escenario.
 

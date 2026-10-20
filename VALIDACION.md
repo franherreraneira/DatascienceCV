@@ -1,6 +1,6 @@
 # Validación de la versión guiada con avance manual
 
-Se ejecutó `python3 tests/validate.py` con Playwright y Chromium: **88 comprobaciones aprobadas**. El juego no necesita estas herramientas para ejecutarse.
+Se ejecutó `python3 tests/validate.py` con Playwright y Chromium: **96 comprobaciones aprobadas**. El juego no necesita estas herramientas para ejecutarse.
 
 Se verificaron las tres etapas y sus introducciones. Esperar diez minutos no cambia de etapa, no cierra la explicación y no aplica un escenario por defecto. Una selección pendiente mantiene el peso original y P=1.000 hasta confirmar. Solo «Aplicar mi decisión y ver qué pasa» fija la ciudad y el escenario. Confirmar después de una espera larga permite completar correctamente las nuevas llegadas. El reloj de cinco minutos es orientativo: llegar a cero no termina la partida; «Terminar» lo hace.
 
@@ -15,3 +15,5 @@ Se revisaron capturas de portada, introducciones, mapa, comparación, proyecció
 El Chromium administrado bloquea `file://`; por eso se ejecutó el contenido exacto del HTML mediante `set_content` en un contexto offline. No se alteraron políticas del navegador. Las pruebas locales no equivalen por sí solas a comprobar el despliegue público.
 
 No se realizaron estudios con participantes: la comprensión debe comprobarse durante el ensayo. No se afirma una mejora de aprendizaje medida empíricamente.
+
+Se verificaron los 32 nombres del recorrido chileno, la separación de las ciudades mencionadas en pares y el orden de los primeros diez nombres en el selector. Se revisaron **1.000 emplazamientos**: todos únicos, en terreno seco y fuera de las parcelas rurales. Los centros de los polígonos de agua son rechazados por el mismo comprobador que utiliza la ubicación de ciudades. El mapa incluye islas y cinco áreas rurales; pulsar una parcela abre la explicación sin alterar población ni aplicar un escenario. Su explicación identifica factores inmóviles y declara que esta capa no modifica Simon. Las instrucciones e indicadores identifican «grupos de personas». Se revisaron nuevas capturas del contorno completo y el detalle de campos y ciudades, también en móvil.
